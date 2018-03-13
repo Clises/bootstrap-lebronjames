@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>骑士队</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="dist/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.container {
+				width: 100% !important;
+				margin: 0px;
+				padding: 0px;
+				background: #272727;
+			}
+			
+			body {
+				margin-top: 50px;
+			}
+			
+			.show {
+				border: 15px solid #303030;
+				height: auto;
+				margin-top: 100px;
+				background-color: #000000;
+			}
+			
+			h3 {
+				height: 40px;
+				background-color: green;
+				color: white;
+				line-height: 40px;
+			}
+			/*看不懂*/
+			
+			.sidebar-section {
+				margin-bottom: 6px;
+			}
+			
+			.sidebar-listitems li {
+				list-style: none;
+				margin-left: -20px;
+			}
+			
+			.sidebar-listitems li a {
+				color: #fcb040;
+				font-weight: 400;
+				font-size: 14px;
+				text-transform: uppercase;
+				text-decoration: none;
+				display: block;
+				line-height: 20px;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;
+				vertical-align: middle;
+			}
+			
+			.sidebar-listitems li a:hover {
+				-moz-transform: translateX(20px);
+				-webkit-transform: translateX(20px);
+				transform: translateX(20px);
+			}
+			
+			
+			h1 {
+				color: green;
+			}
+			
+			.divider {
+				height: 8px;
+				background-color: green;
+			}
+			
+			
+			.biaoqian {
+				margin-top: 10px;
+			}
+			
+			.biaoqian li {
+				list-style: none;
+				width: 80px;
+				height: 20px;
+				background-color: green;
+				color: white;
+				float: left;
+				margin-left: 5px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.biaoqian li:hover {
+				background-color: #FCB040;
+			}
+			
+		</style>
+		<script type="text/javascript">
+			
+			$(function() {
+				$("#Nav").on("activate.bs.scrollspy", function() {
+					//监听事件，获取导航条，给一个事件， activate.bs.scrollspy
+					var aa = $("#myNav .active a").text();
+					//#myNav之后必须有空格如果没有空格就会失效.
+					document.title = aa;
+				})
+			})
+		</script>
+	</head>
+	<!--导航栏-->
+
+	<body data-spy="scroll" data-target="#Nav" data-offset="150">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="Nav" style="background-color: black;">
+			<div class="container-fluid ">
+				<div class="navbar-header">
+				<a href="index.html">	<img src="img/nav-logo.jpg" class="img-responsive" style="margin-top: 10px;margin-left: 80px;" /></a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" ;>
+							<span class="icon-bar" ></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNav">
+					<ul class=" nav navbar-nav" style="margin-left: 20px;">
+						<li class="active">
+							<a href="#">关于</a>
+						</li>
+						<li>
+							<a href="#team">球队</a>
+						</li>
+						<li>
+							<a href="个人.html">个人</a>
+						</li>
+							<li>
+							<a href="咨讯.html">咨讯</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<!--一部分，大图-->
+			<div class="center row col-sx-12">
+				<img src="img/com_man_slider.jpg" class="img-responsive" />
+			</div>
+			<!--二部分 展示部分 10-->
+			<div class="row col-lg-10 col-lg-offset-1 show">
+
+				<h1 id="team"><b>骑士球队首冠</b></h1>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col-lg-4">
+						<h1><b>2016年6月20日</b></h1>
+					</div>
+					<div class="col-lg-4">
+
+					</div>
+					<div class="col-lg-4">
+						<div class="icon" style="margin-top: 20px;margin-left: 50px;cursor: pointer;">
+							<i class="fa fa-qq fa-2x " style="color: #0000FF;"></i>
+							<i class="fa fa-weixin fa-2x" style="color: green;"></i>
+							<i class="fa fa-weibo fa-2x " style="color: yellow;"></i>
+							<i class="fa fa-plus-square fa-2x" style="color: #ff6550;"></i>
+							<i class="fa fa-comment-o fa-2x" style="color: white;"></i>
+							<span style="color: yellow;">
+					32分享
+				</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<br />
+				<!--展示12大图-->
+				<div class="row">
+					<div class="first  col-lg-12">
+						<img src="img/com_athlete_slider.jpg" class="img-responsive" />
+					</div>
+				</div>
+				<br/> <br/> <br/> <br/> <br/>
+
+				<div class="row">
+
+					<!--展示8小图-->
+					<div class=" firsta col-sm-8">
+						<!--展示文字-->
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">52年</h4> 长达52年,无数的机会。 来自阿克伦的一个小孩，那就是克利夫兰体育迷的生活故事。 长久以来，俄亥俄州东北部的人们已经习惯了心碎。 对于一个由专业运动干旱定义的城市来说，胜利的梦想总是不能达到。 但是，这个地区和数百万的粉丝从来没有失去希望，现在有理由庆祝。 干旱已经结束了，阿克伦因为一个小孩的帮忙结束了。
+						</div>
+						<!--展示图片-->
+						<div class="row col-lg-12">
+							<img src="img/img_cavs_champs_1.jpg" style="width: 100%;" />
+						</div>
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">梦想</h4> 他曾经梦想过这一刻是什么样的， 他在他的脑海中想到了，发誓要使它变得真实， 当他做的时候，这一刻比他想象的更好。
+						</div>
+						<div class="row col-lg-12">
+							<img src="img/img_cavs_champs_3.jpg" style="width: 100%;" />
+
+						</div>
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">这个人</h4> 这就是伟大的勒布朗詹姆斯。
+						</div>
+						<div class="row col-lg-12">
+							<img src="img/img_cavs_champs_2.jpg" style="width: 100%;" />
+
+						</div>
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">他们回家</h4> 他和他的球队回家。
+						</div>
+						<div class="row col-lg-12">
+							<img src="img/img_cavs_champs_4.jpg" style="width: 100%;" />
+						</div>
+					</div>
+					<!--右展示-->
+					<br/> <br/> <br/>
+
+						<div class="col-sm-4">
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">不间断</font></h3>
+						<img class="img-responsive" src="img/blog-sidebar-ljff.jpg" alt="">
+					</div>
+
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">综艺娱乐</font></h3>
+						<img class="img-responsive" src="img/blog-sidebar-uninterrupted.jpg" alt="">
+					</div>
+
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">勒布朗的商店</font></h3>
+						<img class="img-responsive" src="img/blog-sidebar-ljff.jpg" alt="">
+					</div>
+
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">故事</font></h3>
+						<div class="sidebar-listitems">
+							<ul>
+								<li>
+									<a href="#">>18岁的勒布朗</a>
+								</li>
+								<li>
+									<a href="#">>king！</a>
+								</li>
+								<li>
+									<a href="#">>生涯</a>
+								</li>
+								<li>
+									<a href="#">>生活</a>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+					</div>
+				<div class="row">
+					<h1>　标签</h1>
+					<div class="col-lg-12">
+						<div class="divider">
+
+						</div>
+						<ul class="biaoqian">
+							<li>总冠军</li>
+							<li>mvp</li>
+							<li>新赛季</li>
+							<li>球队消息</li>
+						</ul>
+					</div>
+				</div>
+				<br/> <br/><br/>
+
+				<br/><br/>
+				<br/><br/>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

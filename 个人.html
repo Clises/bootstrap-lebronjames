@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>骑士队</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="dist/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.container {
+				width: 100% !important;
+				margin: 0px;
+				padding: 0px;
+				background: #272727;
+			}
+			
+			body {
+				margin-top: 50px;
+			}
+			
+			.show {
+				border: 15px solid #303030;
+				height: auto;
+				margin-top: 100px;
+				background-color: #000000;
+			}
+			
+			h3 {
+				height: 40px;
+				background-color: green;
+				color: white;
+				line-height: 40px;
+			}
+			/*看不懂*/
+			
+			.sidebar-section {
+				margin-bottom: 6px;
+			}
+			
+			.sidebar-listitems li {
+				list-style: none;
+				margin-left: -20px;
+			}
+			
+			.sidebar-listitems li a {
+				color: #fcb040;
+				font-weight: 400;
+				font-size: 14px;
+				text-transform: uppercase;
+				text-decoration: none;
+				display: block;
+				line-height: 20px;
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;
+				vertical-align: middle;
+			}
+			
+			.sidebar-listitems li a:hover {
+				-moz-transform: translateX(20px);
+				-webkit-transform: translateX(20px);
+				transform: translateX(20px);
+			}
+			
+			
+			h1 {
+				color: green;
+			}
+			
+			.divider {
+				height: 8px;
+				background-color: green;
+			}
+			
+			
+			.biaoqian {
+				margin-top: 10px;
+			}
+			
+			.biaoqian li {
+				list-style: none;
+				width: 80px;
+				height: 20px;
+				background-color: green;
+				color: white;
+				float: left;
+				margin-left: 5px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.biaoqian li:hover {
+				background-color: #FCB040;
+			}
+			
+		</style>
+		<script type="text/javascript">
+			
+			$(function() {
+				$("#Nav").on("activate.bs.scrollspy", function() {
+					//监听事件，获取导航条，给一个事件， activate.bs.scrollspy
+					var aa = $("#myNav .active a").text();
+					//#myNav之后必须有空格如果没有空格就会失效.
+					document.title = aa;
+				})
+			})
+		</script>
+	</head>
+	<!--导航栏-->
+
+	<body data-spy="scroll" data-target="#Nav" data-offset="150">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="Nav" style="background-color: black;">
+			<div class="container-fluid ">
+				<div class="navbar-header">
+				<a href="index.html">	<img src="img/nav-logo.jpg" class="img-responsive" style="margin-top: 10px;margin-left: 80px;" /></a>	
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" ;>
+							<span class="icon-bar" ></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNav">
+					<ul class=" nav navbar-nav" style="margin-left: 20px;">
+						<li class="active">
+							<a href="#">关于</a>
+						</li>
+						<li>
+							<a href="#team">个人</a>
+						</li>
+						<li>
+							<a href="球队.html">球队</a>
+						</li>
+							<li>
+							<a href="咨讯.html">咨讯</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<!--一部分，大图-->
+			<div class="center row col-sx-12">
+				<img src="img/slider.jpg" class="img-responsive" />
+			</div>
+			<!--二部分 展示部分 10-->
+			<div class="row col-lg-10 col-lg-offset-1 show">
+
+				<h1 id="team"><b>阿克伦之子</b></h1>
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col-lg-4">
+						<h1><b>2017年9月</b></h1>
+					</div>
+					<div class="col-lg-4">
+					</div>
+					<div class="col-lg-4">
+						<div class="icon" style="margin-top: 20px;margin-left: 50px;cursor: pointer;">
+							<i class="fa fa-qq fa-2x " style="color: #0000FF;"></i>
+							<i class="fa fa-weixin fa-2x" style="color: green;"></i>
+							<i class="fa fa-weibo fa-2x " style="color: yellow;"></i>
+							<i class="fa fa-plus-square fa-2x" style="color: #ff6550;"></i>
+							<i class="fa fa-comment-o fa-2x" style="color: white;"></i>
+							<span style="color: yellow;">
+					32分享
+				</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<br />
+				<!--展示12大图-->
+				<div class="row">
+					<div class="first  col-lg-12">
+						<img src="img/ah_moment_of_reflection.jpg" class="img-responsive" />
+					</div>
+				</div>
+				<br/> <br/> <br/> <br/> <br/>
+
+				<div class="row">
+
+					<!--展示8小图-->
+					<div class=" firsta col-sm-8">
+						<!--展示文字-->
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">童年</h4>
+							1984年，勒布朗·詹姆斯出生在美国俄亥俄州克里夫兰胡桃树大街的一栋房子里，
+							他的母亲格利亚·詹姆斯当时16岁，她从来没有透露过詹姆斯的生父。
+							詹姆斯出生后，和母亲一起住在外婆家。
+							那是俄亥俄州阿肯山胡桃木街一栋外婆租来的老房子里，那里是贫民区。
+							她们经常交不起房租。在詹姆斯三岁时圣诞节的清晨，
+							格利亚和男友埃迪给勒布朗买了一套篮球装置玩具。
+							这个晚上，勒布朗42岁的外婆弗雷达死于突发心脏病。
+							5岁到8岁的那几年，詹姆斯搬过12次家。
+							 直到1995年，格利亚终于在斯普林山公寓租下一栋有两个卧室的房子。
+						</div>
+						<!--展示图片-->
+						<div class="row col-lg-12">
+							<img src="img/zms.jpg" style="width: 100%;" />
+						</div>
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">篮球</h4> 
+							在03年进入联盟，被誉为天择之子，加盟克利夫兰，从此承担起兴盛骑士的重任。
+							克利夫兰以重工制造业为核心发展经济，和临近的底律特一样，
+							在社会经济迅速发展的冲击下城市经济终于走向萧条，这个城市渐渐地为人们歧视，
+							从Eminem的MV《Beautiful》中可见一斑。
+							由于诸多原因，詹姆斯的到来，对于骑士、阿克伦、克利夫兰，以及这里的人民，有着非凡的意义，岁寒知松柏，患难见真情，这里的人们给了詹姆斯远胜于家的温暖，同时詹姆斯也成了他们心中的信仰。
+
+						</div>
+						<div class="row col-lg-12">
+							<img src="img/zmsaaaa.jpg" style="width: 100%;" />
+
+						</div>
+						<div class="row col-lg-12" style="color: white;">
+							<h4 class="page-header">生涯三部曲</h4> 
+							<h5 class="page-header">七年 </h5>
+							03-10，骑士7年，
+							见证詹姆斯从人们给他设立的模版魔术师的影子中走出来，成为小皇帝，
+							再一步一步登上最高的舞台，君临天下。
+							
+							<h5 class="page-header">奥布兰恩杯 </h5>
+							10年的转会风波，詹姆斯的人气骤降到冰点。
+							有人说：那是爱之深恨之切的表现。有人说：骑士为詹姆斯付出了全部，这样走了，
+							给人感觉一个花季少女辛勤地持家，等到丈夫功成名就之后，满怀欣喜，等来的却是被分手。
+							但接下来的两个赛季，热火拿到两个总冠军，詹姆斯第一次捧起奥布莱杯，欣喜之情溢于言表。
+							<h5 class="page-header">回家 </h5>
+							15年，詹姆斯决定回家，实现自己诺言，经历坎坷两年，终于实现梦想。
+						</div>
+						<div class="row col-lg-12">
+							<img src="img/yibuqu.jpg" style="width: 100%;" />
+
+						</div>
+						<div class="row col-lg-12">
+							<img src="img/img_cavs_champs_4.jpg" style="width: 100%;" />
+						</div>
+					</div>
+					<!--右展示-->
+					<br/> <br/> <br/>
+
+						<div class="col-sm-4">
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">不间断</font></h3>
+						<img class="img-responsive" src="img/blog-sidebar-ljff.jpg" alt="">
+					</div>
+
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">综艺娱乐</font></h3>
+						<img class="img-responsive" src="img/blog-sidebar-uninterrupted.jpg" alt="">
+					</div>
+
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">勒布朗的商店</font></h3>
+						<img class="img-responsive" src="img/blog-sidebar-ljff.jpg" alt="">
+					</div>
+
+					<div class="sidebar-section">
+						<h3 class="greenbg-title"><font style="vertical-align: inherit;">生涯数据榜</font></h3>
+						<div class="sidebar-listitems">
+							<ul>
+								<li>
+									<a href="#">>常规赛</a>
+								</li>
+								<li>
+									<a href="#">>季后赛</a>
+								</li>
+								<li>
+									<a href="#">>生涯之最</a>
+								</li>
+								<li>
+									<a href="#">>生涯荣誉</a>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+					</div>
+				<div class="row">
+					<h1>　标签</h1>
+					<div class="col-lg-12">
+						<div class="divider">
+
+						</div>
+						<ul class="biaoqian">
+							<li>阿克伦</li>
+							<li>mvp</li>
+							<li>骑士队</li>
+							<li>詹姆斯</li>
+						</ul>
+					</div>
+				</div>
+				<br/> <br/><br/>
+
+				<br/><br/>
+				<br/><br/>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>
